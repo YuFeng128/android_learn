@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.androidlearndemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lamp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.layout.LayoutRelativeLayoutActivity" />
+        <activity android:name=".activity.socket.SocketClientActivity" />
+        <activity android:name=".activity.socket.SocketGetClientActivity" />
+        <activity
+            android:name=".activity.view.FragmentTabActivity"
+            android:label="@string/title_activity_fragment_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.view.FragmentTab2Activity"
+            android:label="@string/title_activity_fragment_tab2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.view.FragmentRadioGuopActivity" />
+        <activity android:name=".activity.view.FragmentRadioGuop2Activity" />
+        <activity android:name=".activity.view.ProgressBarActivity" />
+        <activity android:name=".activity.draw.DrawB17Activity" />
+        <activity android:name=".activity.draw.DrawC17Activity" />
+        <activity android:name=".window.WindowActivity"
+            android:theme="@style/MyAppTheme"></activity>
+    </application>
+
+</manifest>
