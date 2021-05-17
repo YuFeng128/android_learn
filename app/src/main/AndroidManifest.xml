@@ -34,8 +34,10 @@
         <activity android:name=".activity.view.ProgressBarActivity" />
         <activity android:name=".activity.draw.DrawB17Activity" />
         <activity android:name=".activity.draw.DrawC17Activity" />
-        <activity android:name=".window.WindowActivity"
-            android:theme="@style/MyAppTheme"></activity>
+        <activity
+            android:name=".window.WindowActivity"
+            android:theme="@style/MyAppTheme" />
+        <activity android:name=".activity.view.ViewActivity"></activity>
     </application>
 
 </manifest>
