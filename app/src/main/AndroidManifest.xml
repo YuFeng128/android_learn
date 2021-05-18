@@ -37,7 +37,8 @@
         <activity
             android:name=".window.WindowActivity"
             android:theme="@style/MyAppTheme" />
-        <activity android:name=".activity.view.ViewActivity"></activity>
+        <activity android:name=".activity.view.ViewActivity" />
+        <activity android:name=".activity.view.WebViewActivity"></activity>
     </application>
 
 </manifest>

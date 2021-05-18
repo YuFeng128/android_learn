@@ -23,6 +23,8 @@ import com.example.administrator.androidlearndemo.activity.view.FragmentRadioGuo
 import com.example.administrator.androidlearndemo.activity.view.FragmentTab2Activity;
 import com.example.administrator.androidlearndemo.activity.view.FragmentTabActivity;
 import com.example.administrator.androidlearndemo.activity.view.ProgressBarActivity;
+import com.example.administrator.androidlearndemo.activity.view.ViewActivity;
+import com.example.administrator.androidlearndemo.activity.view.WebViewActivity;
 import com.example.administrator.androidlearndemo.window.WindowActivity;
 
 import java.util.ArrayList;
@@ -52,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
         list.add(new ActivityInfoBean("DrawB17Activity", DrawB17Activity.class));
         list.add(new ActivityInfoBean("WindowActivity", WindowActivity.class));
         list.add(new ActivityInfoBean("DrawC17Activity", DrawC17Activity.class));
+        list.add(new ActivityInfoBean("ViewActivity", ViewActivity.class));
+        list.add(new ActivityInfoBean("WebViewActivity", WebViewActivity.class));
         listView.setAdapter(new ActivityListViewAdapter(MainActivity.this,list));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
