@@ -22,7 +22,7 @@
         <activity android:name=".activity.socket.SocketClientActivity" />
         <activity android:name=".activity.socket.SocketGetClientActivity" />
         <activity
-            android:name=".activity.view.FragmentTabActivity"
+            android:name=".activity.view.FragmentTitleStripeActivity"
             android:label="@string/title_activity_fragment_tab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

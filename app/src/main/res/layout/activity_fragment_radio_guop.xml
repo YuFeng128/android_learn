@@ -30,7 +30,6 @@
             android:button="@null"
             android:checked="true"
             android:drawableTop="@mipmap/ic_launcher"
-            android:gravity="center"
             android:text="RadioButton"
             android:textColor="#f00" />
 

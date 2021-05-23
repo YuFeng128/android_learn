@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.administrator.androidlearndemo.activity.draw.DrawB17Activity;
@@ -21,7 +20,7 @@ import com.example.administrator.androidlearndemo.activity.socket.SocketGetClien
 import com.example.administrator.androidlearndemo.activity.view.FragmentRadioGuop2Activity;
 import com.example.administrator.androidlearndemo.activity.view.FragmentRadioGuopActivity;
 import com.example.administrator.androidlearndemo.activity.view.FragmentTab2Activity;
-import com.example.administrator.androidlearndemo.activity.view.FragmentTabActivity;
+import com.example.administrator.androidlearndemo.activity.view.FragmentTitleStripeActivity;
 import com.example.administrator.androidlearndemo.activity.view.ProgressBarActivity;
 import com.example.administrator.androidlearndemo.activity.view.ViewActivity;
 import com.example.administrator.androidlearndemo.activity.view.WebViewActivity;
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new ActivityInfoBean("RelativeLayout-00%", LayoutRelativeLayoutActivity.class));
         list.add(new ActivityInfoBean("SocketClientActivity", SocketClientActivity.class));
         list.add(new ActivityInfoBean("SocketGetClientActivity", SocketGetClientActivity.class));
-        list.add(new ActivityInfoBean("FragmentTabActivity", FragmentTabActivity.class));
+        list.add(new ActivityInfoBean("FragmentTitleStripeActivity", FragmentTitleStripeActivity.class));
         list.add(new ActivityInfoBean("FragmentTab2Activity", FragmentTab2Activity.class));
         list.add(new ActivityInfoBean("FragmentRadioGuopActivity", FragmentRadioGuopActivity.class));
         list.add(new ActivityInfoBean("FragmentRadioGuop2Activity", FragmentRadioGuop2Activity.class));

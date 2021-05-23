@@ -1,5 +1,6 @@
 package com.example.administrator.androidlearndemo.activity.view;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -7,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,7 +21,7 @@ import com.example.administrator.androidlearndemo.fragment.OneFragment;
 
 import java.util.ArrayList;
 
-public class FragmentTabActivity extends FragmentActivity {
+public class FragmentTitleStripeActivity extends FragmentActivity {
 
     private ViewPager viewPager;
     private String TAG = "===========";
@@ -51,6 +53,7 @@ public class FragmentTabActivity extends FragmentActivity {
             return String.valueOf(position);
         }
     };
+    public PagerTitleStrip pagerTitleStripe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +61,11 @@ public class FragmentTabActivity extends FragmentActivity {
         setContentView(R.layout.activity_fragment_tab);
 
 
-
+        pagerTitleStripe = findViewById(android.R.id.tabs);
+        pagerTitleStripe.setBackgroundColor(Color.GRAY);
+        pagerTitleStripe.setTextColor(Color.BLUE);
+        pagerTitleStripe.setNonPrimaryAlpha(0.3f);
+        pagerTitleStripe.setTextSize(1, 20);
         viewPager = findViewById(R.id.viewPage);
 
         viewPager.setAdapter(adapter);
